@@ -18,7 +18,7 @@ if ( !checkBalance ) {
   console.log( "Your balance is $" + balance.toFixed( 2 ) + "." );
 
   // is account not active
-} else if ( isActive == false ) {
+} else if ( !isActive ) {
   // true
   console.log( "Your account is no longer active." );
 
@@ -27,5 +27,5 @@ if ( !checkBalance ) {
 } else if ( balance === 0 ) {
   console.log( "Your account is empty." );
 } else {
-  console.log( "Your balance is negative.\nPlease contact the bank." );
+  console.log( "Your balance is negative. Please contact bank." );
 }
